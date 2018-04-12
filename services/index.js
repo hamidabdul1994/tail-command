@@ -18,21 +18,5 @@ Services.prototype.readTailFunction = function (options,callback) {
   var command = util.format('tail -n %d %s', lines, filename);
 
   cp.exec(command,callback);
-
-  //To execute tail command
-  // cp.exec(command, (err, stdout, stderr) => {
-  //     if (err) throw err;
-  //     console.info(stdout.split("\n").length,stdout.length);
-  //     //It used to check existance of file or directory and return err, stats (info about file or directory)
-  //     // fs.stat(filename, (err, stats) => {
-  //     //     if (err) throw err;
-  //     //
-  //     //     //Removes the Element from  the file based on the size
-  //     //     fs.truncate(filename, stats.size - stdout.length, (err) => {
-  //     //         if (err) throw err;
-  //     //         console.log('File last 10 content has been truncated!');
-  //     //     })
-  //     // });
-  // });
-
 };
+module.exports = new Services();
