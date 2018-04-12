@@ -1,0 +1,17 @@
+{
+  "name": "tail-command",
+  "version": "1.0.0",
+  "description": "To make use of tail command",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tail-commond"
+  ],
+  "author": "hamid Raza noori",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
